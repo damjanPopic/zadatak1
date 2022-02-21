@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  background-color: yellow;
+  height: 100vh;
+  /* FLEXBOX */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.square {
+  display: inline-block;
+  background-color: blue;
+  padding: 40px 80px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
