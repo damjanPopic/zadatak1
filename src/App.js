@@ -3,10 +3,10 @@ import "./index.css";
 import Square from "./Square";
 
 function App() {
-  const [displayValue, setDisplayValue] = useState();
+  const [squareValue, setSquareValue] = useState();
 
-  const displaySquareValueHandler = (value) => {
-    setDisplayValue(value);
+  const squareValueHandler = (value) => {
+    setSquareValue(value);
   };
 
   return (
@@ -14,15 +14,22 @@ function App() {
       <Square
         key={1}
         value={1}
-        onPassSquareValue={displaySquareValueHandler}
+        selected={squareValue === 1}
+        onPassSquareValue={squareValueHandler}
       ></Square>
-      <Square key={2} value={2} onPassSquareValue={displaySquareValueHandler}>
-        {displayValue}
+      <Square
+        key={2}
+        value={2}
+        onPassSquareValue={squareValueHandler}
+        selected={squareValue === 2}
+      >
+        {squareValue}
       </Square>
       <Square
         key={3}
         value={3}
-        onPassSquareValue={displaySquareValueHandler}
+        selected={squareValue === 3}
+        onPassSquareValue={squareValueHandler}
       ></Square>
     </div>
   );
