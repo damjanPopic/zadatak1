@@ -14,11 +14,12 @@ body {
 }
 
 .square {
+  width: 150px;
+  height: 150px;
   display: inline-block;
   background-color: blue;
-  padding: 40px 80px;
-  font-weight: 600;
   border: none;
   cursor: pointer;
   color: white;
+  font-size: 32px;
 }
